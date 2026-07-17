@@ -20,9 +20,17 @@ if ($status) {
     git commit -m "Add app-ads.txt for AdMob verification"
 }
 
-$repoExists = & $GhExe repo view craftedcodelabs-ui/craftedcodelabs-ui.github.io 2>$null
-if ($LASTEXITCODE -ne 0) {
+$repoExists = $false
+try {
+    & $GhExe repo view craftedcodelabs-ui/craftedcodelabs-ui.github.io *> $null
+    if ($LASTEXITCODE -eq 0) { $repoExists = $true }
+} catch {
+    $repoExists = $false
+}
+
+if (-not $repoExists) {
     & $GhExe repo create craftedcodelabs-ui.github.io --public --source=. --remote=origin --push
+    if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 } else {
     if (-not (git remote get-url origin 2>$null)) {
         git remote add origin https://github.com/craftedcodelabs-ui/craftedcodelabs-ui.github.io.git
