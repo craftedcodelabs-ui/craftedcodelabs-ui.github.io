@@ -1,0 +1,17 @@
+# Crafted Code Labs – Entwickler-Website (GitHub Pages Root)
+# Für AdMob app-ads.txt und Play Console (Cyber Dash, CampShare, …)
+
+Entwickler_Website=
+https://craftedcodelabs-ui.github.io/
+
+app-ads.txt=
+https://craftedcodelabs-ui.github.io/app-ads.txt
+
+AdMob_Publisher_ID=
+pub-7130450566926940
+
+CampShare_Website=
+https://craftedcodelabs-ui.github.io/campshare-website/
+
+Support_E-Mail=
+craftedcodelabs@gmail.com

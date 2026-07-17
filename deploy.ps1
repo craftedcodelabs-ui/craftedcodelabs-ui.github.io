@@ -1,0 +1,35 @@
+$ErrorActionPreference = "Stop"
+Set-Location $PSScriptRoot
+
+$GhExe = @(
+    "C:\Program Files\GitHub CLI\gh.exe",
+    "$env:LOCALAPPDATA\Programs\GitHub CLI\gh.exe"
+) | Where-Object { Test-Path $_ } | Select-Object -First 1
+
+if (-not $GhExe) {
+    Write-Error "GitHub CLI fehlt. Installieren: winget install GitHub.cli"
+}
+
+if (-not (Test-Path ".git")) {
+    git init -b main
+}
+
+git add app-ads.txt index.html play-store-urls.txt deploy.ps1
+$status = git status --porcelain
+if ($status) {
+    git commit -m "Add app-ads.txt for AdMob verification"
+}
+
+$repoExists = & $GhExe repo view craftedcodelabs-ui/craftedcodelabs-ui.github.io 2>$null
+if ($LASTEXITCODE -ne 0) {
+    & $GhExe repo create craftedcodelabs-ui.github.io --public --source=. --remote=origin --push
+} else {
+    if (-not (git remote get-url origin 2>$null)) {
+        git remote add origin https://github.com/craftedcodelabs-ui/craftedcodelabs-ui.github.io.git
+    }
+    git push -u origin main
+}
+
+Write-Host ""
+Write-Host "Live:" -ForegroundColor Green
+Write-Host "  https://craftedcodelabs-ui.github.io/app-ads.txt"
