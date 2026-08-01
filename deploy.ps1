@@ -14,10 +14,10 @@ if (-not (Test-Path ".git")) {
     git init -b main
 }
 
-git add app-ads.txt index.html play-store-urls.txt deploy.ps1
+git add app-ads.txt index.html impressum.html css apps play-store-urls.txt deploy.ps1 enable-pages.ps1
 $status = git status --porcelain
 if ($status) {
-    git commit -m "Add app-ads.txt for AdMob verification"
+    git commit -m "Add developer hub with app legal pages"
 }
 
 $repoExists = $false

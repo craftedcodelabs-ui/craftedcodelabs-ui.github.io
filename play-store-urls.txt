@@ -4,6 +4,9 @@
 Entwickler_Website=
 https://craftedcodelabs-ui.github.io/
 
+Entwickler_Hub_Apps=
+https://craftedcodelabs-ui.github.io/#apps
+
 app-ads.txt=
 https://craftedcodelabs-ui.github.io/app-ads.txt
 
@@ -12,6 +15,21 @@ pub-7130450566926940
 
 CampShare_Website=
 https://craftedcodelabs-ui.github.io/campshare-website/
+
+CampShare_Rechtliches_Hub=
+https://craftedcodelabs-ui.github.io/apps/campshare.html
+
+CampShare_Datenschutz=
+https://craftedcodelabs-ui.github.io/campshare-website/#datenschutz
+
+Sparschwein_Rechtliches_Hub=
+https://craftedcodelabs-ui.github.io/apps/sparschwein.html
+
+Sparschwein_Datenschutz=
+https://craftedcodelabs-ui.github.io/craftedcodelabs_privacy.github.io/
+
+Gemeinsames_Impressum=
+https://craftedcodelabs-ui.github.io/impressum.html
 
 Support_E-Mail=
 craftedcodelabs@gmail.com

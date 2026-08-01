@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crafted Code Labs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Crafted Code Labs – Android-Apps von Fred Konstantin Haim. CampShare, Sparschwein und weitere Apps mit Datenschutz, Impressum und Support.">
+  <title>Crafted Code Labs – Apps, Datenschutz &amp; Impressum</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="#start">
+        Crafted Code Labs
+        <span>Android-Apps · Spittal an der Drau, Österreich</span>
+      </a>
+      <nav>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#apps">Apps</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Crafted Code Labs</h1>
-    <p>Apps von Crafted Code Labs.</p>
-    <ul>
-      <li><a href="https://craftedcodelabs-ui.github.io/campshare-website/">CampShare</a></li>
-    </ul>
+    <section id="start" class="hero">
+      <h1>Crafted Code Labs</h1>
+      <p class="lead">
+        Willkommen auf der zentralen Seite für meine Android-Apps.
+        Hier findest du Informationen über mich, eine Übersicht aller Apps
+        sowie die rechtlich erforderlichen Seiten für Google Play – Datenschutz, Impressum und mehr.
+      </p>
+    </section>
+
+    <section id="ueber-mich" class="accent-box">
+      <h2>Über mich</h2>
+      <p>
+        Ich bin <strong>Fred Konstantin Haim</strong>, unabhängiger App-Entwickler (Kleingewerbe)
+        mit Sitz in <strong>Spittal an der Drau, Kärnten, Österreich</strong>.
+        Mein Fokus liegt auf benutzerfreundlichen Android-Anwendungen – von Community-Apps
+        bis hin zu Offline-Tools.
+      </p>
+      <p style="margin-top:0.75rem;">
+        Als Einzelunternehmer lege ich Wert auf direkte Kommunikation, transparente Datenschutz-Informationen
+        und zuverlässigen Support für Nutzer meiner Apps.
+      </p>
+    </section>
+
+    <section id="apps">
+      <h2 class="section-title">Meine Apps</h2>
+      <p class="section-intro">
+        Wähle eine App, um zur jeweiligen App-Seite mit Datenschutz, Impressum und weiteren rechtlichen Informationen zu gelangen.
+      </p>
+
+      <div class="grid">
+        <article class="app-card">
+          <h3>CampShare</h3>
+          <p class="package">com.craftedcodelabs.campshare</p>
+          <p>Camping-Marktplatz am Stellplatz – verkaufen, verschenken, suchen und helfen nur vor Ort auf deinem Campingplatz.</p>
+          <div class="app-links">
+            <a class="primary" href="apps/campshare.html">Rechtliches &amp; Infos</a>
+            <a href="https://play.google.com/store/apps/details?id=com.craftedcodelabs.campshare" rel="noopener noreferrer" target="_blank">Google Play</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <h3>Sparschwein</h3>
+          <p class="package">com.craftedcodelabs.sparschwein</p>
+          <p>Dein digitales Sparschwein – Sparziele lokal auf dem Gerät verwalten, ohne Cloud und ohne Tracking.</p>
+          <div class="app-links">
+            <a class="primary" href="apps/sparschwein.html">Rechtliches &amp; Infos</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <h3>Cyber Dash</h3>
+          <p class="package">com.craftedcodelabs.cyberdash</p>
+          <p>Rasanter Cyberpunk Endless Runner – Highscore, Leaderboard und optional Werbung.</p>
+          <div class="app-links">
+            <a class="primary" href="apps/cyberdash.html">Rechtliches &amp; Infos</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="kontakt" class="legal-block">
+      <h2>Kontakt &amp; Support</h2>
+      <p class="meta">Support zu allen Apps · geschäftliche Anfragen · Datenschutz</p>
+      <div class="card">
+        <p>
+          <strong>E-Mail:</strong>
+          <a href="mailto:craftedcodelabs@gmail.com">craftedcodelabs@gmail.com</a>
+        </p>
+        <p style="margin-top:0.75rem;">
+          <strong>Standort:</strong> 9800 Spittal an der Drau, Kärnten, Österreich
+        </p>
+        <p style="margin-top:0.75rem; color: var(--muted); font-size: 0.95rem;">
+          Antwortzeit: in der Regel 3–5 Werktage
+        </p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>&copy; 2026 Crafted Code Labs · Fred Konstantin Haim</div>
+      <div class="footer-links">
+        <a href="#start">Start</a>
+        <a href="#apps">Apps</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="mailto:craftedcodelabs@gmail.com">Kontakt</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
