@@ -5,7 +5,7 @@ Entwickler_Website=
 https://craftedcodelabs-ui.github.io/
 
 Entwickler_Hub_Apps=
-https://craftedcodelabs-ui.github.io/#apps
+https://craftedcodelabs-ui.github.io/apps/
 
 app-ads.txt=
 https://craftedcodelabs-ui.github.io/app-ads.txt

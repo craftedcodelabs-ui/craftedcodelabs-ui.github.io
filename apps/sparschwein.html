@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-base="../">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sparschwein – Datenschutzerklärung und Impressum. Lokale Spar-App ohne Cloud.">
+  <meta name="description" content="Sparschwein – Datenschutzerklärung und Impressum.">
   <title>Sparschwein – Rechtliches &amp; Infos</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-  <header>
-    <div class="header-inner">
-      <a class="logo" href="../index.html">
-        Crafted Code Labs
-        <span>Sparschwein</span>
-      </a>
-      <nav>
-        <a href="../index.html#apps">Alle Apps</a>
-        <a href="../impressum.html">Impressum</a>
-      </nav>
-    </div>
-  </header>
+<body data-page="app-sparschwein">
+  <div id="site-header"></div>
 
   <main>
-    <a class="back-link" href="../index.html#apps">&larr; Alle Apps</a>
+    <nav class="breadcrumb" aria-label="Brotkrumen">
+      <a href="../index.html">Start</a>
+      <span>/</span>
+      <a href="index.html">Apps</a>
+      <span>/</span>
+      <span>Sparschwein</span>
+    </nav>
 
-    <section class="hero" style="padding-top:0;">
-      <h1>Sparschwein</h1>
-      <p class="lead">
-        Dein digitales Sparschwein – Sparziele und Transaktionen werden ausschließlich lokal auf deinem Gerät gespeichert.
+    <section class="page-hero">
+      <div class="app-card-top">
+        <div class="app-icon sparschwein">SP</div>
+        <div>
+          <p class="eyebrow">Sparschwein</p>
+          <h1>Rechtliches &amp; Infos</h1>
+          <p class="package">de.crafetcodelabs.sparschwein</p>
+        </div>
+      </div>
+      <p class="lead" style="margin-top:1rem;">
+        Sparziele und Transaktionen werden ausschließlich lokal auf deinem Gerät gespeichert.
       </p>
-      <p class="package" style="margin-top:0.5rem;">de.crafetcodelabs.sparschwein</p>
     </section>
 
-    <section class="legal-block">
-      <h2>Rechtliche Seiten</h2>
-      <p class="meta">Google Play · DSGVO</p>
+    <section class="section">
+      <div class="section-head">
+        <h2>Rechtliche Seiten</h2>
+        <p>Google Play · DSGVO</p>
+      </div>
 
       <div class="legal-links">
         <div class="legal-link-row">
@@ -42,42 +45,35 @@
             <strong>Datenschutzerklärung</strong><br>
             <span>Lokale Speicherung, Berechtigungen, Backup-Export</span>
           </div>
-          <a href="https://craftedcodelabs-ui.github.io/craftedcodelabs_privacy.github.io/">Öffnen</a>
+          <a class="btn-open" href="https://craftedcodelabs-ui.github.io/craftedcodelabs_privacy.github.io/">Öffnen</a>
         </div>
         <div class="legal-link-row">
           <div>
             <strong>Impressum</strong><br>
-            <span>Verantwortlicher Entwickler (Crafted Code Labs)</span>
+            <span>Verantwortlicher Entwickler</span>
           </div>
-          <a href="../impressum.html">Öffnen</a>
+          <a class="btn-open" href="../impressum.html">Öffnen</a>
         </div>
         <div class="legal-link-row">
           <div>
             <strong>Kontakt</strong><br>
             <span>Fragen zum Datenschutz und Support</span>
           </div>
-          <a href="mailto:craftedcodelabs@gmail.com">E-Mail senden</a>
+          <a class="btn-open" href="mailto:craftedcodelabs@gmail.com">E-Mail</a>
         </div>
       </div>
-    </section>
 
-    <section class="accent-box">
-      <h2>Kurzinfo Datenschutz</h2>
-      <p>
-        Sparschwein arbeitet offline. Es werden keine Daten an Server des Entwicklers übertragen.
-        Backup-Dateien, die du selbst exportierst, liegen in deiner Verantwortung.
-      </p>
+      <div class="card" style="margin-top:1.25rem;">
+        <h3>Kurzinfo Datenschutz</h3>
+        <p class="meta" style="margin-top:0.5rem;">
+          Sparschwein arbeitet offline. Es werden keine Daten an Server des Entwicklers übertragen.
+          Backup-Dateien, die du selbst exportierst, liegen in deiner Verantwortung.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <div>&copy; 2026 Sparschwein · Crafted Code Labs</div>
-      <div class="footer-links">
-        <a href="../index.html">Start</a>
-        <a href="../impressum.html">Impressum</a>
-      </div>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
+  <script src="../js/site.js"></script>
 </body>
 </html>
